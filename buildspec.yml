@@ -10,7 +10,7 @@ phases:
       - aws --version
       - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin 449325664824.dkr.ecr.eu-west-2.amazonaws.com/dev:1.0.2
       - REPOSITORY_URI=449325664824.dkr.ecr.eu-west-2.amazonaws.com/dev
-      - IMAGE_TAG=1.1.3
+      - IMAGE_TAG=1.1.4
   build:
     commands:
       - echo Build started on `date`
